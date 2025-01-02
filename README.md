@@ -1,7 +1,7 @@
-# Pokémon Card List
+# Pokedex
 Este repositório contém um programa para gerenciar uma lista de cartões de Pokémon. Com esta aplicação, você pode visualizar, adicionar, editar e remover cartões de Pokémon de forma simples e intuitiva.
 
-# Funcionalidades
+## Funcionalidades
 Visualização de Cartões: Navegue pela lista de cartões de Pokémon com informações detalhadas de cada um.
 
 Adição de Cartões: Adicione novos cartões à lista com nome, tipo, habilidades e outras características.
@@ -12,9 +12,20 @@ Remoção de Cartões: Remova cartões da lista quando necessário.
 
 Pesquisa: Encontre rapidamente cartões específicos usando a funcionalidade de pesquisa.
 
-# Tecnologias Utilizadas
-HTML/CSS: Para a estrutura e estilo da aplicação.
+## Tecnologias Utilizadas - Tools
+- HTML/CSS: Para a estrutura e estilo da aplicação.
 
-JavaScript: Para a lógica e interatividade do programa.
+- JavaScript: Para a lógica e interatividade do programa.
 
-Node.js: Para o backend e gerenciamento do servidor local.
+- Node.js: Para o backend e gerenciamento do servidor local.
+
+## How Contribute
+
+```bash
+# Clone the project
+$ git clone https://github.com/bhclira/pokedex.git
+```
+
+### License
+
+This project is under the MIT license. See the file [License](LICENSE) for more details
