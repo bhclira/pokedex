@@ -11,8 +11,6 @@ function convertPokemonToLi(pokemon) {
             <div class="detail">
                 <ol class="types">
                     ${convertPokemonTypesToLi(pokemon.types).join('')}
-                    <li class="type">grass</li>
-                    <li class="type">poison</li>
                 </ol>
 
                 <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
