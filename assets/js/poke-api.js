@@ -35,10 +35,12 @@ pokeApi.getPokemonDetail = (pokemon) => {
 }
 
 // método que retorna um array de pokemons
-pokeApi.getPokemons = (offset = 0, limit = 5) => {
-// atribuindo a url da API a const url
-    const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=10';
-// retornando a resposta da requisição fetch
+pokeApi.getPokemons = (offset = 0, limit = 20) => {
+
+    // atribuindo a url da API a const url
+    const url = 'https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}';
+
+    // retornando a resposta da requisição fetch
     return fetch(url)
         // convertendo a resposta para json
         .then((response) => response.json())
@@ -46,7 +48,9 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((jsonBody) => jsonBody.results)
         // mapeando os resultados e retornando o objeto pokemon
         .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))
+        // retornando o array de pokemons
         .then(detailRequests => Promise.all(detailRequests))
+        // retornando o array de pokemons
         .then((pokemonsDetails) => pokemonsDetails)
-// retornando o array de pokemons
+        // retornando o array de pokemons
 }
