@@ -35,10 +35,10 @@ pokeApi.getPokemonDetail = (pokemon) => {
 }
 
 // método que retorna um array de pokemons
-pokeApi.getPokemons = (offset = 0, limit = 20) => {
+pokeApi.getPokemons = (offset = 0, limit = 5) => {
 
     // atribuindo a url da API a const url
-    const url = 'https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}';
+    const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
 
     // retornando a resposta da requisição fetch
     return fetch(url)
