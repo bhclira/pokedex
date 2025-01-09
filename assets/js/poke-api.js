@@ -1,11 +1,13 @@
 /* 
-o método .map itera sobre cada elemento de um array e aplica a função passada como argumento a cada um deles.
+* o método .map itera sobre cada elemento de um array e aplica a função passada como argumento a cada um deles.
+
+* O método .join junta todos os elementos de um array em uma string, separando-os por um delimitador.
 */
 
 const pokeApi = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
-// instanciando um novo objeto Pokemon e atribuindo os valores de pokeDetail a ele
+    // instanciando um novo objeto Pokemon e atribuindo os valores de pokeDetail a ele
     const pokemon = new Pokemon()
     // mapeando os valores de pokeDetail para o objeto Pokemon
     pokemon.number = pokeDetail.order
@@ -16,13 +18,12 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     // desestruturando o array types e atribuindo o primeiro valor a const type
     const [type] = types
     // atribuindo os valores de types e type ao objeto Pokemon
-    pokemon.types = type
+    pokemon.types = types
     //  atribuindo o valor de type ao objeto Pokemon
     pokemon.type = type
     // atribuindo a imagem de pokeDetail ao objeto Pokemon
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
-
-    // retornando o objeto Pokemon
+    // retornando o objeto pokemon
     return pokemon
 }
 // método que retorna um objeto pokemon
