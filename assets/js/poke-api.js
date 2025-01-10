@@ -10,7 +10,7 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     // instanciando um novo objeto Pokemon e atribuindo os valores de pokeDetail a ele
     const pokemon = new Pokemon()
     // mapeando os valores de pokeDetail para o objeto Pokemon
-    pokemon.number = pokeDetail.order
+    pokemon.number = pokeDetail.id
     // atribuindo o valor de pokeDetail.name ao objeto Pokemon
     pokemon.name = pokeDetail.name
     // mapeando os tipos de pokeDetail e retornando o primeiro tipo
